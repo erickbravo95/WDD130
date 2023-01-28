@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(255, 167, 182);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    text-align: center;
+}
+
+h1:hover{
+    color: black;
+}
+
+#edu{
+    color: white;
+    text-align: center;
+}
+
+.lista{
+    color: black;
+    display: inline-block;
+    text-align: left;
+}
+
+img{
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+
+#ato{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+#end{
+    color: black;
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+}
