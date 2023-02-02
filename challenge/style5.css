@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(126, 126, 126);
+}
+
+.but{
+    margin: 150px 170px;
+    width: 25%;
+    border: 50px solid rgb(88, 87, 87);
+    border-radius: 50%;
+    
+}
