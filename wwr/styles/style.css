@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
 nav a {
+    padding: 35px;
     text-decoration: none;
     text-align: center;
     color: #303B42;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 nav a:hover{
-    text-decoration: underline;
     color: #D3EDF6;
     background-color:#236EBE
 }
@@ -19,12 +22,22 @@ main section {
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 .button-box {
     text-align: center;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1 {
+    font-family: acme;
     text-align: center;
+} 
+
+#hero-msg h4 {
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 #background {
@@ -32,7 +45,10 @@ main section {
 }
 
 body{
-    background-color:white
+    font-size: 22px;
+    background-color:white;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -40,13 +56,19 @@ header{
 }
 
 .book, .join{
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: Roboto, Helvetica, sans-serif;
     text-decoration: none;
     color: #303B42;
     background-color:#E8B26F
 }
 
 .book:hover, .join:hover{
-    text-decoration: underline;
+    font-family: Roboto, Helvetica, sans-serif;
+    text-decoration: none;
     color: #D3EDF6;
     background-color:#236EBE
 }
@@ -56,18 +78,42 @@ header{
 }
 
 .msg{
+    padding: 35px;
+    line-height: 1.5em;
     background-color:#E8B26F
 }
 
+.rivers-card h2, .camping-card h2, .rapids-card h2{
+    margin: 0;
+    color: #303B42;
+    font-family: Roboto, Helvetica, sans-serif;  
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #236EBE;
+}
+
 .msg h2{
+    margin: 0;
+    font-family: acme;
     color: #303B42;
 }
 
 .msg p{
+    padding-bottom: 15px;
+    font-size: .8em;
+    font-family: Roboto, Helvetica, sans-serif;
     color: #303B42;
 }
 
 footer{
+    margin-top: 200px;
+    text-decoration: none;
+    padding: 25px 50px;
     color: #303B42;
     background-color:#E8B26F
 }
@@ -80,6 +126,8 @@ footer a{
 
 
 .home-title {
+    margin-top: 10px;
+    font-size: 2em;
     color: #236EBE;
 }
 
@@ -87,11 +135,16 @@ h4{
     color: #236EBE;
 }
 
+#logo_link{
+    padding-top: 5px;
+}   
+
 .logo {
     width: 80px;
 }
 
 .icon{
+    padding-top: 10px;
     width: 80px;
 }
 
@@ -100,15 +153,21 @@ h4{
 }
  
 footer p {
+    font-family: Roboto, Helvetica, sans-serif;
     font-size: 1.2em;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 } 
 
+/* Should erase? */
 footer a:hover{
-    
+    text-decoration: none;
     color: #D3EDF6;
     background-color:#236EBE
+}
+
+footer .social img {
+    padding-top: 15px;
 }
