@@ -246,6 +246,129 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* --------------- Rivers site css ---------------- */
+
+.rivers-grid{
+    display: grid;
+    grid-template-columns: repeat(12,100px);
+    grid-template-rows: repeat(24,100px);
+}
+
+#fondo1{
+    height: 725px;
+    grid-column: 1/13;
+    grid-row: 1/9;
+    background-color:#236EBE;
+}
+
+#mensaje1 h2{
+    margin: 0;
+    font-family: acme;
+    color: #303B42;
+}
+
+#mensaje1 p{
+    padding-bottom: 15px;
+    font-size: .7em;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: #303B42;
+}
+
+#mensaje1{
+    background-color:#E8B26F;
+    grid-column: 2/7;
+    grid-row: 2/8;
+    padding: 35px;
+}
+
+#imagen1{
+    width: 500px;
+    grid-column: 7/9;
+    grid-row: 3/5;
+    transition: transform .5s;
+}
+
+#imagen1:hover{
+    transform: scale(1.5,1.5);
+}
+
+#fondo2{
+    height: 725px;
+    grid-column: 1/13;
+    grid-row: 9/17;
+    background-color: white;
+}
+
+#mensaje2 h2{
+    margin: 0;
+    font-family: acme;
+    color: white;
+}
+
+#mensaje2 p{
+    padding-bottom: 15px;
+    font-size: .9em;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: white;
+}
+
+#mensaje2{
+    background-color: #236EBE;
+    grid-column: 7/12;
+    grid-row: 9/16;
+    padding: 35px;
+}
+
+#imagen2{
+    width: 500px;
+    grid-column: 2/9;
+    grid-row: 11/15;
+    transition: transform .5s;
+}
+
+#imagen2:hover{
+    transform: scale(1.5,1.5);
+}
+
+#fondo3{
+    height: 725px;
+    grid-column: 1/13;
+    grid-row: 17/25;
+    background-color: #236EBE;
+}
+
+#mensaje3 h2{
+    margin: 0;
+    font-family: acme;
+    color: #303B42;
+}
+
+#mensaje3 p{
+    padding-bottom: 15px;
+    font-size: .8em;
+    font-family: Roboto, Helvetica, sans-serif;
+    color: #303B42;
+}
+
+#mensaje3{
+    background-color:#E8B26F;
+    grid-column: 2/7;
+    grid-row: 18/23;
+    padding: 35px;
+}
+
+#imagen3{
+    width: 500px;
+    grid-column: 7/9;
+    grid-row: 19/22;
+    transition: transform .5s;
+}
+
+#imagen3:hover{
+    transform: scale(1.5,1.5);
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
