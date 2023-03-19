@@ -16,7 +16,6 @@
 }
 
 nav {
-    
     display: flex;
     justify-content: space-around;
 }
@@ -33,6 +32,13 @@ nav a {
 nav a:hover{
     color: #D3EDF6;
     background-color:#236EBE
+}
+
+header{
+    opacity: .8;
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:#E8B26F
 }
 
 main section {
@@ -78,12 +84,6 @@ body{
     padding: 0;
 }
 
-header{
-    opacity: .8;
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color:#E8B26F
-}
 
 .book, .join{
     border-radius: 5px;
@@ -184,23 +184,6 @@ header{
     color: #303B42;
 }
 
-footer{
-    margin-top: 200px;
-    text-decoration: none;
-    padding: 25px 50px;
-    color: #303B42;
-    background-color:#E8B26F;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer a{
-    text-decoration: none;
-    color: #303B42;
-    background-color:#E8B26F;
-}
-
 .home-grid{
     display: grid;
     grid-template-columns: repeat(10,1fr);
@@ -225,7 +208,24 @@ h4{
 #hero-img{
     width: 100%;
 }
- 
+
+footer{
+    margin-top: 200px;
+    text-decoration: none;
+    padding: 25px 50px;
+    color: #303B42;
+    background-color:#E8B26F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #303B42;
+    background-color:#E8B26F;
+}
+
 footer p {
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 1.2em;
