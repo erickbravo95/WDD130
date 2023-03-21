@@ -31,6 +31,7 @@ nav a {
 nav a:hover{
     color: #FFFFFF;
     background-color:#1C9954;
+    transition: 0.5s;
 }
 
 header{
@@ -66,17 +67,83 @@ main img:hover {
     transform: scale(1.1);
 }
 
-h1{
+#index-grid h1{
     font-family: "Bungee";
+    text-align: start;
 }
 
 main div{
     font-size: 1.27em;
+    text-align: start;
+}
+
+#contact-grid{
+    font-family: "Fjalla One", Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.icons{
+    grid-column: 1/2;
+    text-align: center;
+    font-size: xx-large;
+    color: #1D2936;
+}
+
+.icons:hover{
+    color:#1C9954;
+    transition: 0.5s;
+}
+
+#email-vertical{
+    grid-column: 3/4;
+    grid-row: 4;
+    color: #1D2936;
+    text-decoration: none;
+    transform: rotate(90deg);
+}
+
+#email-vertical:hover{
+    color: #1C9954;
+    transition: 0.5s;
+}
+
+#contact-grid h1{
+    margin-top: 90px;
+    text-align: center;
+}
+
+#contact-grid div p {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0px 100px 0px 100px;
+}
+
+#hello-box {
+    text-align: center;
+}
+
+#hello-box a {
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: "Fjalla One", Helvetica, sans-serif;
+    text-decoration: none;
+    color: #1C9954;
+    background-color:#303B42;
+}
+
+#hello-box a:hover {
+    color: #FFFFFF;
+    background-color:#1C9954;
+    transition: 0.5s;
 }
 
 /* <-------------------------------------------> */
 
 footer{
+    
     margin-top: 90px;
     text-decoration: none;
     padding: 25px 50px;
@@ -91,6 +158,14 @@ footer a{
     text-decoration: none;
     color: #1C9954;
     background-color:#1D2936;
+    padding: 44px 30px 44px 30px;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:#1C9954;
+    transition: 0.5s;
 }
 
 footer p {
@@ -101,14 +176,62 @@ footer p {
 
 footer p a:hover {
     text-decoration: none;
-} 
-
-footer a:hover{
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color:#1C9954;
 }
 
-footer .social img {
-    padding-top: 15px;
+/* <----------------TEST------------------------> */
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #1C9954;
+  border-right: 16px solid #1D2936;
+  border-bottom: 16px solid #1C9954;
+  border-left: 16px solid #1D2936;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+

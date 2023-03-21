@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Erick Bravo | Projects</title>
 </head>
-<body>
-    <header>
-        <a id="logo_link" href="index.html" >
-            <img class="logo" src="images/logo1.png" alt="Erick Bravo Logo" >
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <div id="Resume-box">
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <header>
+            <a id="logo_link" href="index.html" >
+                <img class="logo" src="images/logo1.png" alt="Erick Bravo Logo" >
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
                 <a href="https://www.linkedin.com/in/erick-bravo-toledo-33a05522b/">Resume</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <h2>Here are a few websites I have been working on...</h2>
-        <section>
-            <a href="https://erickbravo95.github.io/WDD130/wwr/index.html" >
-                <img src="images/img-pj-1.png" alt="Wwr website">
-            </a>
-            <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w4.html" >
-                <img src="images/img-pj-4.png" alt="week 4 challenge">
-            </a>
-            <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w5.html" >
-                <img src="images/img-pj-5.png" alt="week 5 challenge">
-            </a>
-            <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w6.html" >
-                <img src="images/img-pj-6.png" alt="week 6 challenge">
-            </a>
-            <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w9.html" >
-                <img src="images/img-pj-9.png" alt="week 9 challenge">
-            </a>
-        </section>
-    </main>
-    <footer>
-        <p><a href="site-plan.html">Site Plan</a></p>
-    </footer>
+            </nav>
+        </header>
+        <main>
+            <h2>Here are a few websites I have been working on...</h2>
+            <section>
+                <a href="https://erickbravo95.github.io/WDD130/wwr/index.html" >
+                    <img src="images/img-pj-1.png" alt="Wwr website">
+                </a>
+                <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w4.html" >
+                    <img src="images/img-pj-4.png" alt="week 4 challenge">
+                </a>
+                <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w5.html" >
+                   <img src="images/img-pj-5.png" alt="week 5 challenge">
+                </a>
+                <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w6.html" >
+                    <img src="images/img-pj-6.png" alt="week 6 challenge">
+                </a>
+                <a href="https://erickbravo95.github.io/WDD130/challenge/challenge-w9.html" >
+                    <img src="images/img-pj-9.png" alt="week 9 challenge">
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p>Designed & Built by Erick Bravo</p>
+        </footer>
+    </div>
+
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 1000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
 </html>
