@@ -8,9 +8,9 @@ body{
 }
 
 .but{
-    margin: 150px 170px;
-    width: 25%;
-    border: 50px solid rgb(88, 87, 87);
+    margin: 150px 75px;
+    width: 20%;
+    border: 20px solid rgb(88, 87, 87);
     border-radius: 50%;
     
 }

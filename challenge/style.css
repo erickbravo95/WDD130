@@ -5,11 +5,13 @@ body {
 h1{
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 
 h4{
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 
 h1:hover{
@@ -19,12 +21,15 @@ h1:hover{
 #edu{
     color: white;
     text-align: center;
+    font-size: small;
 }
 
 .lista{
     color: black;
     display: inline-block;
     text-align: left;
+    font-size: large;
+    font-weight: bold;
 }
 
 img{

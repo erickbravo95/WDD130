@@ -10,7 +10,7 @@ img {
 
 #contenido{
     background-color: white;
-    margin: 0% 437px 0% 437px;
+    margin: 0% 610px 0% 610px;
 }
 
 h1,h4{
@@ -18,7 +18,8 @@ h1,h4{
 }
 
 h1{
-    margin-top: auto;}
+    margin-top: auto;
+}
 
 h4{
     margin-top: 0%;
@@ -30,7 +31,8 @@ h4{
     color: rgb(105, 103, 103);
     text-align: center;
     margin-bottom: 0%;
-    text;
+    font-size: large;
+    font-weight: 300;
 }
 sup{
     vertical-align: super;
@@ -44,7 +46,7 @@ sup{
     background-color: rgb(64, 64, 168);
     color: white;
     border-radius: 0px 0px 15px 15px;
-    margin: 0% 437px 0% 437px;
+    margin: 0% 610px 0% 610px;
 }
 .letra{
     text-align: center;
