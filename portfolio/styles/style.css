@@ -41,7 +41,42 @@ header{
     background-color:#1D2936;
 }
 
-/* <-------------------------------------------> */
+/* <----------project---------------------------------> */
+
+section{
+    display: flex; 
+    height: 600px;
+}
+
+section a{
+    width: 0px;
+    flex-grow: 0.142;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section a:hover{
+    width: 300px;
+    opacity: 1;
+    transition: 1s;
+    transform: scale(1.1)
+}
+/*
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    width: 300px;
+    opacity: 1;
+    transition: 1s;
+    filter: contrast(120%);
+}*/
+
+/* <---------------------------------------------------------> */
 
 #index-grid{
     font-family: "Fjalla One", Helvetica, sans-serif;
@@ -54,14 +89,14 @@ main div{
     grid-column: 2/3;
 }
 
-main img {
+#index_pic {
     margin: 100px 100px;
     width: 55%;
     grid-column: 3/4;   
     filter: drop-shadow(8px 8px 0px #1C9954);
 }
 
-main img:hover {
+#index_pic:hover {
     /*opacity: .8;*/
     transition: 1s;
     transform: scale(1.1);
